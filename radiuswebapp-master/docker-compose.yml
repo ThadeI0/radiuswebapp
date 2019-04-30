@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  testformbase:
+    ports: 
+      - "8001:80"
+    image: ${DOCKER_REGISTRY-}testformbase
+    build:
+      context: .\testformbase
+      dockerfile: Dockerfile
